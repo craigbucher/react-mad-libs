@@ -27,7 +27,7 @@ class App extends Component {
       <div className="App">
         <h1>MADLIBS!</h1>
         <WordForm words={this.state.selectedMadLib.words} onInputChange={this._onWordInputChange.bind(this)} />
-        <Story tesxt={this.state.selectedMadLib.getText()} />
+        <Story text={this.state.selectedMadLib.getText()} />
       </div>
     );
   }
