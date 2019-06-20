@@ -14,7 +14,7 @@ The data structure that drives the UI is `madlibs/MadLibs.js` -to complete your 
 Primary Objectives
 -------------
 * `WordForm.js` should render text inputs for all word objects in the array - use the `label` property in the word object for the value of the input's [placeholder](http://www.w3schools.com/Tags/att_input_placeholder.asp) attribute.
-  * These text inputs should call the `_onInputChange()` function in `WordForm.js` when a change event occurs - and pass in the appropriate arguments that `_onInputChange()` is expecting.
+  * These text inputs should call the `onInputChange()` function in `WordForm.js` when a change event occurs - and pass in the appropriate arguments that `onInputChange()` is expecting.
 * The `Story.js` component should simply display the value returned from the `getText()` function on the `MadLib` object - but only have this component displayed when all word objects have values.
 
 Secondary Objectives
