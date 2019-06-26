@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import './Story.css';
+import React, { Component } from 'react'
+import './Story.css'
 
 class Story extends Component {
   render() {
@@ -11,4 +11,4 @@ class Story extends Component {
   }
 }
 
-export default Story;
+export default Story
