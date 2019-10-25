@@ -22,3 +22,6 @@ Right now, we only have the first Mad Lib showing up on the page. There are 3 in
 * Create a `<select>`/dropdown that allows a user to switch the selected MadLib to play
   * *Map* through the array in `this.state.madlibs` - gather the titles, and display those as the dropdown `<options>`.
 * Using the `onChange` event, set the `selectedMadLib` object in `App.js`'s state to the selected MadLib.
+
+
+Stuck? This [video](https://www.youtube.com/watch?v=Gpq53GmWugc) might help
