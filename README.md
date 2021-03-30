@@ -2,6 +2,8 @@ Madlibs!
 ===================
 In this exercise, you will explore handling input events and a more complex component data flow by creating a UI for the [Madlibs game](http://www.madlibs.com/). Much of the app has been scaffolded - you'll be responsible for connecting a few wires to complete the flow of data, and rendering appropriate HTML.
 
+Note: Make sure to run `npm install` from the app's root to get the necessary node modules on your local machine.
+
 `madlibs/MadLibs.js` contains an array of MadLib objects. Don't change anything in this file. A MadLib object has three properties that you'll utilize:
 * `title` - the title of the Madlib
 * `words` - an array of fill-in-the-blank word objects. These objects contain a `key`, `label`, and `value` property that you'll need.
