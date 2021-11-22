@@ -1,15 +1,13 @@
-import React, { Component } from 'react'
 import './WordForm.css'
 
-class WordForm extends Component {
-  onInputChange(key, index, event) {
-    this.props.onInputChange(key, event.currentTarget.value, index)
+function WordForm(props) {
+  function onInputChange(key, index, event) {
+    props.onInputChange(key, index, event.currentTarget.value)
   }
-  render() {
-    return (
-      <div></div>
-    )
-  }
+
+  return (
+    <div></div>
+  )
 }
 
 export default WordForm
