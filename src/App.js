@@ -1,30 +1,38 @@
-import './App.css'
-import React, { useState } from 'react'
-import WordForm from './components/madlib-wordform/WordForm.js'
-import Story from './components/madlib-story/Story.js'
-import MadLibs from './madlibs/MadLibs.js'
+import "./App.css"
+import React, { useState } from "react"
+
+// data
+import MadLibsData from "./data/MadLibs.js"
+
+// components
+import Selector from "./components/Selector.js"
+import Story from "./components/Story.js"
+import WordForm from "./components/WordForm.js"
 
 function App() {
   // states
-  //const [madlibs, setMadLibs] = useState(MadLibs)
-  const [selectedMadLib, setSelectedMadLib] = useState(MadLibs[0])
+  const [selectedMadLib, setSelectedMadLib] = useState(MadLibsData[0])
 
   // event handlers
-  const onWordInputChange = (key, index, value) => {
+  const updateMadLibWord = (wordIndex, wordValue) => {  
     let newSelectedMadLib = { ...selectedMadLib }
-    newSelectedMadLib.words[index] = {
-      ...newSelectedMadLib.words[index],
-      value: value
+  
+    newSelectedMadLib.words[wordIndex] = {
+      ...newSelectedMadLib.words[wordIndex],
+      userWord: wordValue
     }
-    
+
     setSelectedMadLib(newSelectedMadLib)
   }
 
   // renders
   return (
     <div className="App">
-      <h1>MADLIBS!</h1>
-      <WordForm words={selectedMadLib.words} onInputChange={onWordInputChange} />
+      <h2>MadLibs!</h2>
+      <hr />
+      <Selector data={MadLibsData} setSelectedMadLib={setSelectedMadLib} />
+      <hr />
+      <WordForm words={selectedMadLib.words} updateMadLibWord={updateMadLibWord} />
       <Story text={selectedMadLib.getText()} />
     </div>
   )

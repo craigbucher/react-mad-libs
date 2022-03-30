@@ -1,14 +1,13 @@
-body {
-  background-color: grey;
-}
-
 .App {
   text-align: center;
 }
 
-.dens {
-  margin: 0px auto;
-  width: 540px;
-  background-color: grey;
-  border-radius: 20%;
+body {
+  background-color: #dddddd;
+}
+
+#div-story {
+  color:slategrey;
+  text-align: left;
+  padding: 16px;
 }
